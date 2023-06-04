@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comprobación de Instructores</title>
+</head>
+<link rel="stylesheet" href="css/comproStylos.css"> 
+
+<body>
+  <h1>Comprobación de Instructores</h1>
+  <p id="mensaje"></p>
+  <form onsubmit="return comprobarSeleccion()">
+    <label for="nombre">Nombre:</label>
+    <select id="nombre">
+      <option value="Jennifer">Jennifer</option>
+      <option value="Tatiana">Tatiana</option>
+      <option value="Uldarico">Uldarico</option>
+    </select>
+    <br>
+
+    <label for="apellido">Apellido:</label>
+    <select id="apellido">
+      <option value="Fajardo">Fajardo</option>
+      <option value="Cabrera">Cabrera</option>
+      <option value="Andrade">Andrade</option>
+    </select>
+    <br>
+
+    <label for="Materia">Materia:</label>
+    <select id="Materia">
+      <option value="Javascript">Javascript</option>
+      <option value="Java">Java</option>
+      <option value="Python">Python</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Comprobar">
+  </form>
+
+  <script src="js/Comprovar.js"></script>
+</body>
+</html>

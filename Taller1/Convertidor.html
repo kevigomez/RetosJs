@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="css/converStilos.css"> 
+</head>
+<body>
+  <h1>Conversor de Temperatura</h1>
+  
+  <form>
+    <label for="temperatureInput">Ingrese una temperatura en grados:</label>
+    <input type="number" id="temperatureInput" required>
+    <br><br>
+    
+    <label for="convertFromSelect">Vas a convertir de:</label>
+    <select id="convertFromSelect">
+      <option value="Celsius">Celsius</option>
+      <option value="Fahrenheit">Fahrenheit</option>
+      <option value="Kelvin">Kelvin</option>
+    </select>
+    <br><br>
+    
+    <label for="convertToSelect">Deseas convertir a:</label>
+    <select id="convertToSelect">
+      <option value="Celsius">Celsius</option>
+      <option value="Fahrenheit">Fahrenheit</option>
+      <option value="Kelvin">Kelvin</option>
+    </select>
+    <br><br>
+    
+    <button id="convertButton" type="button">Convertir</button>
+  </form>
+  <script src="js/Temperatura.js"></script>
+</body>
+
+</html>

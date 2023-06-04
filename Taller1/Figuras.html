@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Figuras Geométricas</title>
+  <link rel="stylesheet" href="css/figuraStylos.css"> 
+</head>
+<body>
+  <h1>Calculadora de Figuras Geométricas</h1>
+
+  <!-- Tarjeta del círculo -->
+  <div class="card">
+    <h2>Círculo</h2>
+    <button onclick="mostrarModal('circulo')">Perímetro</button>
+    <button onclick="mostrarModal('circulo')">Área</button>
+  </div>
+
+  <!-- Tarjeta del triángulo -->
+  <div class="card">
+    <h2>Triángulo</h2>
+    <button onclick="mostrarModal('triangulo')">Perímetro</button>
+    <button onclick="mostrarModal('triangulo')">Área</button>
+  </div>
+
+  <!-- Tarjeta del rectángulo -->
+  <div class="card">
+    <h2>Rectángulo</h2>
+    <button onclick="mostrarModal('rectangulo')">Perímetro</button>
+    <button onclick="mostrarModal('rectangulo')">Área</button>
+  </div>
+
+  <!-- Tarjeta del cuadrado -->
+  <div class="card">
+    <h2>Cuadrado</h2>
+    <button onclick="mostrarModal('cuadrado')">Perímetro</button>
+    <button onclick="mostrarModal('cuadrado')">Área</button>
+  </div>
+
+  <!-- Ventana modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <form id="modal-form">
+        <div id="modal-inputs"></div>
+        <button onclick="calcular()">Calcular</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/ModlsGeometricas.js"></script>
+</body>
+</html>

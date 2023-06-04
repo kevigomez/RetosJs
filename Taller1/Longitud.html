@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Operaciones de Cadena</title>
+  <link rel="stylesheet" href="css/longistylos.css"> 
+</head>
+<body>
+  <h1>Operaciones de Cadena</h1>
+
+  <form>
+    <label for="palabra">Palabra:</label>
+    <input type="text" id="palabra" name="palabra" required>
+
+    <label for="opcion">Elige una opción:</label>
+    <select id="opcion" name="opcion">
+      <option value="1">Longitud de la palabra</option>
+      <option value="2">Palabra en mayúsculas</option>
+      <option value="3">Palabra en minúsculas</option>
+      <option value="4">Primer carácter de la palabra</option>
+    </select>
+
+    <button type="button" onclick="realizarOperacion()">Realizar Operación</button>
+    <div id="resultado"></div>
+  </form>
+
+
+  <script src="js/Longitud.js"></script>
+</body>
+</html>
